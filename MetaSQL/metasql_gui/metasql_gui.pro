@@ -45,6 +45,6 @@ win32-msvc* {
   PRE_TARGETDEPS += ../../lib/MetaSQL.lib \
                     ../../lib/common.lib
 } else {
-  PRE_TARGETDEPS += ../../lib/libMetaSQL.a \
-                    ../../lib/libcommon.a
+  PRE_TARGETDEPS += ../../lib/libMetaSQL.so \
+                    ../../lib/libcommon.so
 }

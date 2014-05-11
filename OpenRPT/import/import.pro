@@ -39,7 +39,7 @@ LIBS += -L../../lib -lcommon
 win32-msvc* {
   PRE_TARGETDEPS += ../../lib/common.lib
 } else {
-  PRE_TARGETDEPS += ../../lib/libcommon.a
+  PRE_TARGETDEPS += ../../lib/libcommon.so
 }
 
 QT += xml sql

@@ -39,9 +39,9 @@ win32-msvc* {
                     ../../lib/common.lib   \
                     ../../lib/renderer.lib
 } else {
-  PRE_TARGETDEPS += ../../lib/libwrtembed.a \
-                    ../../lib/libcommon.a   \
-                    ../../lib/librenderer.a
+  PRE_TARGETDEPS += ../../lib/libwrtembed.so \
+                    ../../lib/libcommon.so   \
+                    ../../lib/librenderer.so
 }
 
 RC_FILE = writer.rc

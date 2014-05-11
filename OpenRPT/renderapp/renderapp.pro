@@ -37,8 +37,8 @@ win32-msvc* {
   PRE_TARGETDEPS += ../../lib/common.lib   \
                     ../../lib/renderer.lib
 } else {
-  PRE_TARGETDEPS += ../../lib/libcommon.a   \
-                    ../../lib/librenderer.a
+  PRE_TARGETDEPS += ../../lib/libcommon.so   \
+                    ../../lib/librenderer.so
 }
 
 DESTDIR = ../../bin
