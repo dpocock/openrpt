@@ -29,7 +29,7 @@ MOC_DIR = tmp
 OBJECTS_DIR = tmp
 UI_DIR = tmp
 
-LIBS += -L../../lib -lDmtx_Library
+LIBS += -L../../lib -ldmtx
 
 HEADERS = openreports.h \
           barcodes.h \

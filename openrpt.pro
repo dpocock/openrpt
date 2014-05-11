@@ -24,7 +24,6 @@ SUBDIRS = common \
           MetaSQL \
           MetaSQL/metasql_gui \
           MetaSQL/importmql_gui \
-          OpenRPT/Dmtx_Library \
           OpenRPT/renderer \
           OpenRPT/wrtembed \
           OpenRPT/writer \
