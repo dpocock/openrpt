@@ -32,17 +32,20 @@ UI_DIR      = tmp
 OBJECTS_DIR = tmp
 
 INCLUDEPATH += ../../common ../common ../images
-LIBS += -L../../lib -lwrtembed -lcommon -lrenderer -lDmtx_Library
 
 win32-msvc* {
   PRE_TARGETDEPS += ../../lib/wrtembed.lib \
                     ../../lib/common.lib   \
-                    ../../lib/renderer.lib
+                    ../../lib/renderer.lib \
+                    ../../lib/libDmtx_Library.lib
 } else {
   PRE_TARGETDEPS += ../../lib/libwrtembed.a \
                     ../../lib/libcommon.a   \
-                    ../../lib/librenderer.a
+                    ../../lib/librenderer.a \
+                    ../../lib/libDmtx_Library.a
 }
+
+LIBS += $$PRE_TARGETDEPS 
 
 RC_FILE = writer.rc
 macx:RC_FILE = ../images/OpenRPT.icns
