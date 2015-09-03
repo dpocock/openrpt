@@ -1,0 +1,2 @@
+# multiple libraries, only used together
+libopenrpt1v5 binary: package-name-doesnt-match-sonames

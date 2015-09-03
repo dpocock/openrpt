@@ -11,11 +11,13 @@ Homepage: http://www.xtuple.com/openrpt/
 Vcs-Git: https://github.com/xtuple/openrpt
 Vcs-Browser: https://github.com/xtuple/openrpt
 
-Package: libopenrpt1
+Package: libopenrpt1v5
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libopenrpt1
+Replaces: libopenrpt1
 Description: graphical SQL report writer, designer and rendering library
  Graphical SQL report writer, designer and rendering engine, optimized
  for PostgreSQL. WYSIWYG display, GUI built with Qt. Reports can be saved
@@ -34,7 +36,7 @@ Description: graphical SQL report writer, designer and rendering engine
 Package: libopenrpt-dev
 Section: libdevel
 Architecture: any
-Depends: libqt4-dev (>= 4.1.0), libdmtx-dev, ${misc:Depends}, libopenrpt1 (= ${binary:Version})
+Depends: libqt4-dev (>= 4.1.0), libdmtx-dev, ${misc:Depends}, libopenrpt1v5 (= ${binary:Version})
 Description: graphical SQL report writer, designer and rendering engine (development)
  Graphical SQL report writer, designer and rendering engine, optimized
  for PostgreSQL. WYSIWYG display, GUI built with Qt. Reports can be saved
