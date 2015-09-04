@@ -1,3 +1,9 @@
+openrpt (3.3.10-2) unstable; urgency=medium
+
+  * Install desktop files.
+
+ -- Daniel Pocock <daniel@pocock.pro>  Fri, 04 Sep 2015 16:05:09 +0200
+
 openrpt (3.3.10-1) unstable; urgency=medium
 
   * New upstream release.
