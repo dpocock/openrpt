@@ -23,6 +23,10 @@ override_dh_auto_install:
 	mv bin/graph bin/openrpt-graph
 	mkdir -p debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)
 	mv lib/lib*.so* debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)
+	mkdir -p debian/tmp/usr/share/icons/hicolor/128x128/apps
+	cp OpenRPT/images/OpenReportsIcon128.png debian/tmp/usr/share/icons/hicolor/128x128/apps
+	mkdir -p debian/tmp/usr/share/applications
+	for i in *.desktop ; do sed -e 's!^Icon=.*$$!Icon=/usr/share/icons/hicolor/128x128/apps/OpenReportsIcon128.png!g' $$i > debian/tmp/usr/share/applications/$$i ; done
 	dh_auto_install
 	#find . -name '*.pro' -a -not -path './.pc/*' -exec test -e {}.orig \; -a -exec mv -f {}.orig {} \;
 
