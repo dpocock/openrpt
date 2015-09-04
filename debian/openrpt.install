@@ -1,1 +1,3 @@
 bin/* /usr/bin
+usr/share/icons/hicolor/128x128/apps/OpenReportsIcon128.png
+usr/share/applications/*.desktop
